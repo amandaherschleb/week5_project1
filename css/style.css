@@ -204,3 +204,22 @@ li {
 	width: 100%;
 	margin: 40px auto;
 }
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ul.sortable li.placeholder {
+  position: relative;
+
+}
+ul.sortable li.placeholder:before {
+  position: absolute;
+
+}

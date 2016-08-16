@@ -11,6 +11,11 @@
 
 <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="grocery.js"></script>
+<script type="text/javascript" src="jquery-sortable.js"></script>
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,13 +53,13 @@
         <input type="number" id="addPrice" placeholder="Price">
         <input type="number" id="addQuantity" placeholder="Quantity">
         <br>
-        <div class="btn btn-success">Add Item</div>
+        <div class="btn btn-success" id='add-item-btn'>Add Item</div>
       </div>
-      <ul id="list">
+      <ul class='sortable' id="list">
 
       </ul>
       <div class="totalCost"><h4>Total Cost: <span></span></h4></div>
-
+      <div class="btn btn-danger" id='remove-item-btn'>Remove Item</div>
     </div>
   </div>
 </div>
